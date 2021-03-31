@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.obrii.mit.mykolaichuk</groupId>
-    <artifactId>SemanticWebLab1-2</artifactId>
+    <artifactId>SemanticWebLab3</artifactId>
     <version>01</version>
     <packaging>war</packaging>
 
-    <name>SemanticWebLab1-2</name>
+    <name>SemanticWebLab3</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -21,7 +21,14 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-        
+        <!-- https://mvnrepository.com/artifact/org.apache.jena/apache-jena-libs -->
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>apache-jena-libs</artifactId>
+            <version>3.17.0</version>
+            <type>pom</type>
+        </dependency>
+
         
     </dependencies>
 
