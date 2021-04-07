@@ -81,21 +81,7 @@ public class CreateResource extends HttpServlet {
             out.println("<h1>Servlet CreateResource at " + request.getContextPath() + "</h1>");
             out.println("<p>Resource created </p>");
             
-            StmtIterator iter = RDF.model.listStatements();
-        while (iter.hasNext()) {
-    Statement stmt      = iter.nextStatement();  // get next statement
-    Resource  subject   = stmt.getSubject();     // get the subject
-    Property  predicate = stmt.getPredicate();   // get the predicate
-    RDFNode   object    = stmt.getObject();      // get the object
-
-    out.print(subject.toString());
-    out.print(" " + predicate.toString() + " ");
-    if (object instanceof Resource) {
-       out.print(object.toString());
-    } else {
-        // object is a literal
-        out.print(" \"" + object.toString() + "\"");
-    }}
+            RDF.model.write(out);
             
             out.println("<p> <a href = \""+path+"\"> Home </a></p>");
             out.println("</body>");
