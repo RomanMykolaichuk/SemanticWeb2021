@@ -14,19 +14,29 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        
-        
-        
+
+
+
         <%!int myInt = 0;%>
-        <% myInt++; %>   
-            
-            <p><%=myInt%></p>
-            
-            
-            <form action="<%=request.getContextPath()%>/servlet" method="post">
-                <input type="text" name="text1"/>                
-                <input type="submit" value="Ok"/>                
-            </form>  
-            
+        <% myInt++;%>   
+
+        <p><%=myInt%></p>
+
+
+        <form action="<%=request.getContextPath()%>/servlet" method="post">
+            <input type="text" name="text1"/>                
+            <input type="submit" value="Ok"/>                
+        </form> 
+
+
+        <h2>Create resource</h2>
+
+        <form action="<%=request.getContextPath()%>/resource" method="post">
+            <input type="text" name="given" placeholder="enter given name"/> <br> 
+            <input type="text" name="family" placeholder="enter family name"/> <br>
+            <input type="submit" value="Ok"/>                
+        </form> 
+
+
     </body>
 </html>

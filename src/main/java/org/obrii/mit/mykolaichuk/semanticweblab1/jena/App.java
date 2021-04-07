@@ -63,7 +63,7 @@ public class App {
     } else {
         // object is a literal
         System.out.print(" \"" + object.toString() + "\"");
-    }
+    }}
 
     System.out.println(" .");
             System.out.println("============ model.write ==============");
@@ -94,4 +94,4 @@ model2.write(System.out);
 }
     }
 
-}
+
