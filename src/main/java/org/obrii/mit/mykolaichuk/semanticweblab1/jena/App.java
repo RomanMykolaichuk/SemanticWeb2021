@@ -66,7 +66,7 @@ public class App {
     }
 
     System.out.println(" .");
-    
+            System.out.println("============ model.write ==============");
     model.write(System.out);
     
     
