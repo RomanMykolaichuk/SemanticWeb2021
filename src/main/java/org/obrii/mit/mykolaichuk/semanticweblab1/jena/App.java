@@ -20,6 +20,7 @@ import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.vocabulary.VCARD;
 
+
 /**
  *
  * @author 38068
