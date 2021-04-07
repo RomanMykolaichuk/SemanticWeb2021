@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.obrii.mit.mykolaichuk</groupId>
-    <artifactId>SemanticWebLab3</artifactId>
+    <artifactId>SemanticWeb</artifactId>
     <version>01</version>
     <packaging>war</packaging>
 
-    <name>SemanticWebLab3</name>
+    <name>SemanticWeb</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
